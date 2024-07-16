@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  min-width: 250px;
+  background-image: url("https://images.pexels.com/photos/2736499/pexels-photo-2736499.jpeg?cs=srgb&dl=pexels-content-pixie-1405717-2736499.jpg&fm=jpg");
+}
+h2{
+margin-left: 40%;
+font-size: 60px;
+  color: white;
+  font-family: cursive;
+}
+.todolist,.todolist2{
+
+        width: 50%;
+        align-items: center;
+        margin-left: 350px;
+        margin-top:20px;
+        /* margin: 200px auto 100px; */
+        height: 1000px;
+
+    }
+.todolist3,.todolist4{
+
+      width: 30%;
+      margin-left: 200px;
+      /* margin: 200px auto 100px; */
+      margin-top: -250px;
+      height: 700px;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  border-radius: 10px;
+  
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+
+ul li:hover {
+  background: #ddd;
+}
+
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #e4a9a5;
+  color: white;
+}
+
+
+.header {
+  background-color: #dc8a84;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
